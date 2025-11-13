@@ -2,7 +2,7 @@
 
 A modern **Flutter** application that uses **Tesseract OCR** to extract Bangla text from images captured via the camera or selected from the gallery.
 
-![App Icon](assets/icon.png)
+![App Icon](https://github.com/tanvirkabir47/bangla-ocr-flutter/blob/main/assets/icon/icon.png)
 
 ---
 
