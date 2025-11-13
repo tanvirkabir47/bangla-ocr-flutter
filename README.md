@@ -20,7 +20,7 @@ A modern **Flutter** application that uses **Tesseract OCR** to extract Bangla t
 
 You can directly install the latest version of the app on your Android device:
 
-➡️ [**Download APK**](https://github.com/tanvirkabir47/bangla-ocr-flutter/app-release.apk)
+➡️ [**Download APK**](https://github.com/tanvirkabir47/bangla-ocr-flutter/blob/main/app-release.apk)
 
 > 💡 *If the link doesn’t work yet, make sure you’ve uploaded your APK under your latest GitHub Release.*
 
