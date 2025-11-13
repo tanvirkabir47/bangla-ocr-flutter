@@ -101,10 +101,9 @@ bash
 Copy code
 lib/
  ├── main.dart          # App entry point
- ├── widgets/           # (Optional) UI components
 assets/
- ├── icon.png           # App icon
- ├── screenshots/       # UI screenshots
+ ├── icon/icon.png           # App icon
+
 ```
 ## 🧑‍💻 Author
 Tanvir Kabir
