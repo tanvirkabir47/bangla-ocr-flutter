@@ -46,8 +46,8 @@ A modern **Flutter** application that uses **Tesseract OCR** to extract Bangla t
 
 ### 1️⃣ Clone the repository
 ```bash
-git clone https://github.com/<your-username>/bangla-ocr-app.git
-cd bangla-ocr-app
+git clone https://github.com/tanvirkabir47/bangla-ocr-flutter.git
+cd bangla-ocr-flutter
 2️⃣ Install dependencies
 bash
 Copy code
@@ -68,6 +68,8 @@ dependencies:
     sdk: flutter
   image_picker: ^1.1.2
   tesseract_ocr: ^0.3.0
+  path_provider: ^2.1.4
+  flutter_launcher_icons: "^0.14.4"
 🧰 App Icon Setup
 Place your app icon (e.g., app_icon.png) in assets/icon.png and run:
 
@@ -91,7 +93,9 @@ lib/
 assets/
  ├── icon.png           # App icon
  ├── screenshots/       # UI screenshots
-🧑‍💻 Author
+```
+## 🧑‍💻 Author
 Tanvir Kabir
 📧 tanvirkabir47@gmail.com
 🌐 tanvirkabir47.netlify.app
+
