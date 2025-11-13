@@ -38,7 +38,7 @@ A modern **Flutter** application that uses **Tesseract OCR** to extract Bangla t
 
 | Home Screen | OCR Processing | Extracted Text |
 |--------------|----------------|----------------|
-| ![Home](assets/screenshot1.png) | ![Loading](assets/screenshot2.png) | ![Result](assets/screenshot3.png) |
+| ![Home](https://github.com/tanvirkabir47/bangla-ocr-flutter/blob/main/assets/image/home.jpg) | ![Loading](assets/screenshot2.png) | ![Result](assets/screenshot3.png) |
 
 ---
 
