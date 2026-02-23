@@ -1,5 +1,6 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:tesseract_ocr/tesseract_ocr.dart';
 import 'package:tesseract_ocr/ocr_engine_config.dart';
@@ -129,8 +130,9 @@ class _OCRHomePageState extends State<OCRHomePage> {
                             borderRadius: BorderRadius.circular(16),
                             child: Image.file(
                               _image!,
-                              fit: BoxFit.cover,
+                              fit: BoxFit.contain,
                               width: double.infinity,
+                              // ensure the full image is visible without cropping
                             ),
                           ),
                   ),
@@ -164,13 +166,25 @@ class _OCRHomePageState extends State<OCRHomePage> {
                                   fontWeight: FontWeight.bold, fontSize: 16),
                             ),
                             const Spacer(),
-                            if (_extractedText.isNotEmpty)
+                            if (_extractedText.isNotEmpty) ...[
+                              IconButton(
+                                tooltip: "Copy",
+                                icon: const Icon(Icons.copy, size: 20),
+                                onPressed: () {
+                                  Clipboard.setData(
+                                      ClipboardData(text: _extractedText));
+                                  ScaffoldMessenger.of(context).showSnackBar(
+                                      const SnackBar(
+                                          content: Text('Copied to clipboard')));
+                                },
+                              ),
                               IconButton(
                                 tooltip: "Clear",
                                 icon: const Icon(Icons.clear, size: 20),
                                 onPressed: () =>
                                     setState(() => _extractedText = ""),
                               ),
+                            ],
                           ],
                         ),
                         const SizedBox(height: 8),
